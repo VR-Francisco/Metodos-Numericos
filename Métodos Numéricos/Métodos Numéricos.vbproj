@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12D9E64B-596F-4718-8D3B-358DE6F2526D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Métodos_Numéricos.My.MyApplication</StartupObject>
+    <RootNamespace>Métodos_Numéricos</RootNamespace>
+    <AssemblyName>Métodos Numéricos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Métodos Numéricos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Métodos Numéricos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="info.lundin.math, Version=1.1.5287.18951, Culture=neutral, PublicKeyToken=2f7fe9ec5efab85f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\seminario\Newtonrapson\Newtonrapson\bin\Debug\info.lundin.math.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Primer Departamental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Primer Departamental.Designer.vb">
+      <DependentUpon>Primer Departamental.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Segundo Departamental.Designer.vb">
+      <DependentUpon>Segundo Departamental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segundo Departamental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio Menu.Designer.vb">
+      <DependentUpon>Inicio Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Primer Departamental.resx">
+      <DependentUpon>Primer Departamental.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segundo Departamental.resx">
+      <DependentUpon>Segundo Departamental.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio Menu.resx">
+      <DependentUpon>Inicio Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\noun_Math_3492780 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bi1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regla Falsa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton rap.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c0a81ee6d3838f9ec17dc8627df1472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-iconos-de-computadora-flecha-musica-hacia-atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-mobile-phones-pet-insurance-clip-art-arrow-back-5b48745471fc98.8849965915314750284669.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-creative-commons-license-creative-work-free-content-back-arrow-angle-text-trademark-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6f71cefd9454bf0cb497d9e0d31f5155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algebra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coordinate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mantenimiento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jacobi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jacobi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gauss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gauss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lagrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_Math_2431290 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_formula_3237702 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_graphic_1007930 %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+</Project>
